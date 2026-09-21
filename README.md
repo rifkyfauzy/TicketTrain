@@ -1,66 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+TicketTrain
+TicketTrain is a web application designed for ticket management and sales. It is built on the Laravel framework and uses Tailwind CSS for a clean, modern user interface. The project follows the Model-View-Controller (MVC) architectural pattern, leveraging Laravel's expressive syntax and powerful tools for routing, database ORM (Eloquent), and background job processing.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+🚀 Key Features
+Event & Ticket Management – Create, manage, and sell tickets for various events.
 
-## About Laravel
+User-Friendly Interface – Responsive design using Tailwind CSS for a seamless experience on desktop and mobile.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Secure Backend – Built on Laravel with built-in protection against common web vulnerabilities (CSRF, XSS, SQL injection).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Database Agnostic – Uses Laravel's Eloquent ORM and schema migrations for easy database management.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Real-Time Capabilities – Supports Laravel's event broadcasting for real-time updates.
 
-## Learning Laravel
+🛠️ Technology Stack
+Layer	Technology
+Backend	PHP 8.x, Laravel 10.x
+Frontend	Blade, Tailwind CSS, Vite
+Database	MySQL / PostgreSQL (configurable)
+Build Tool	Vite
+Testing	PHPUnit
+📦 Installation
+Clone the repository
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+bash
+git clone https://github.com/rifkyfauzy/TicketTrain.git
+cd TicketTrain
+Install PHP dependencies
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+bash
+composer install
+Install Node dependencies
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+bash
+npm install
+Environment setup
 
-## Laravel Sponsors
+bash
+cp .env.example .env
+php artisan key:generate
+Configure your database in the .env file, then run migrations:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+bash
+php artisan migrate
+Build assets
 
-### Premium Partners
+bash
+npm run build
+Start the development server
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+bash
+php artisan serve
+The application will be available at http://localhost:8000.
 
-## Contributing
+📁 Project Structure
+text
+TicketTrain/
+├── app/            # Core application logic
+├── config/         # Configuration files
+├── database/       # Migrations, seeders, factories
+├── public/         # Entry point and compiled assets
+├── resources/      # Views, CSS, JS
+├── routes/         # Web and API routes
+├── storage/        # Logs, cache, uploads
+├── tests/          # PHPUnit tests
+└── vendor/         # Composer dependencies
+🤝 Contributing
+Contributions are welcome. Please fork the repository, create a feature branch, and submit a pull request. For major changes, open an issue first to discuss your ideas.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+📄 License
+This project is open-sourced software licensed under the MIT license.
